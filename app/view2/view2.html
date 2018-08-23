@@ -1,5 +1,7 @@
 <p>This is the partial for view 2.</p>
 <p>
   Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
+  {{ 'Current version is v%VERSION%.' | interpolate }} <br>
+  <button ng-click="getValue()">get value</button>
+  value: {{someValueFromState}}
 </p>

@@ -9,6 +9,10 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['stateStorage', '$scope', function(stateStorage, $scope) {
+    $scope.value = "hoi";
 
+    $scope.setValue = function() {
+      stateStorage.randomVariable = $scope.value;
+    };
 }]);
