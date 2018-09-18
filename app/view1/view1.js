@@ -9,6 +9,12 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$scope', function($scope) {
+  $scope.data = [{ title: 'title 1', text: 'text 1'} , { title: 'title 2', text: 'text 2'}];
 
+  $scope.action = function(value) {
+    alert(value);
+  };
+
+  $scope.someText = 'some text';
 }]);
