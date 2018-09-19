@@ -1,6 +1,9 @@
 <p>This is the partial for view 1.</p>
 <table-directive data="data">
-    <button id="edit" ng-click="customScope.$parent.action(row.title)">edit - {{row.title}} - {{$index}} - {{$parent.someText}}</button>
-    <button id="notification" ng-click="customScope.$parent.action(row.title)">notification - {{row.title}} - {{$index}}</button>
-    <button id="inviteShareplan" ng-click="action(row.title)">inviteShareplan  - {{row.title}} - {{$index}}</button>
+  <header>header</header>
+    <buttons>
+      <button id="edit" ng-click="customScope.$parent.action(row.title)">edit - {{row.title}} - {{$index}} - {{$parent.someText}}</button>
+      <button id="notification" ng-click="customScope.$parent.action(row.title)">notification - {{row.title}} - {{$index}}</button>
+      <button id="inviteShareplan" ng-click="action(row.title)">inviteShareplan  - {{row.title}} - {{$index}}</button>
+    </buttons>
 </table-directive>
